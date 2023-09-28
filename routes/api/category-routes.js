@@ -69,7 +69,7 @@ router.put('/:id', async (req, res) => {
 // Deletes a category by its ID
 router.delete('/:id', async (req, res) => {
   try {
-    const categoryData = await Trip.destroy({
+    const categoryData = await Category.destroy({
       where: { id: req.params.id }
     });
     //checks to see if the Category exists

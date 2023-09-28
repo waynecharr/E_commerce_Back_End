@@ -4,13 +4,14 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+//Added defininitions to define ProductTag which includes references to the Product ID and Tag ID
 ProductTag.init(
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: trueS
     },
     product_id: {
       type: DataTypes.INTEGER,

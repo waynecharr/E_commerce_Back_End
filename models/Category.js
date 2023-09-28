@@ -4,6 +4,7 @@ const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
+// Added defininitions to define Category, including type and Category Name
 Category.init(
   {
     id: {
@@ -11,7 +12,6 @@ Category.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
-    // define columns
     },
     category_name: {
       type: DataTypes.STRING,
