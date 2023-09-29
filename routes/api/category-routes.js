@@ -22,7 +22,7 @@ router.get('/:id', async (req, res) => {
     // Use the Category model's findOne method to find a specific category by its id
     const categoryData = await Category.findOne({
       where: { id: req.params.id },
-      include: [Product], // Include associated Products
+      include: [Product], 
     });
 
     // Check if the category exists

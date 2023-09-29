@@ -6,11 +6,11 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // Finds all products, includes their associated Product and Tag data
 router.get('/', async (req, res) => {
   try {
-    // Use the Product model's findAll method to retrieve all products
+    // Finds the product tags through findall. Includes Category and Tag through ProducTag
     const productData = await Product.findAll({
       include: [
-        { model: Category }, // Include associated Category
-        { model: Tag, through: ProductTag }, // Include associated Tags through ProductTag
+        { model: Category }, 
+        { model: Tag, through: ProductTag }, 
       ],
     });
 
@@ -20,16 +20,17 @@ router.get('/', async (req, res) => {
   }
 });
 
-//Gets one prudct 
+// Gets one singular product
 router.get('/:id', async (req, res) => {
   try {
     const productId = req.params.id;
 
+    //Finds the product through findall. Includes Category and Tag through ProducTag
     const product = await Product.findOne({
       where: { id: productId },
       include: [
-        { model: Category }, // Include associated Category
-        { model: Tag, through: ProductTag }, // Include associated Tags through ProductTag
+        { model: Category }, 
+        { model: Tag, through: ProductTag }, 
       ],
     });
 

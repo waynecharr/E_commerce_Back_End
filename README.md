@@ -33,6 +33,7 @@ This is an E-Commerce database of different products. This particular git uses S
 - "fixed error where update tag was not working" 
 - "added demonstration video to ReadMe" 
 - "added some notes in code" 
+- "edited some notes in the code to make the intention of functions in the routes more clear" 
 
 
 # Contributing
