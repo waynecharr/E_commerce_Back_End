@@ -79,17 +79,16 @@ router.put('/:id', async (req, res) => {
 // Deletes a tag by its ID value
 router.delete('/:id', async (req, res) => {
   try {
-    // Use the Tag model's destroy method to delete the tag by its id
     const deletedRowCount = await Tag.destroy({
       where: { id: req.params.id },
     });
 
-    // Check if no tag with the given id was deleted
+    // Looks to see if there's no tag or if it was deleted.
     if (deletedRowCount === 0) {
       return res.status(404).json({ message: 'Tag not found' });
     }
 
-    // If a tag was deleted, respond with a success message
+    // Error message sent to user.
     res.status(200).json({ message: 'Tag deleted successfully' });
   } catch (err) {
     res.status(500).json(err);
