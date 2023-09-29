@@ -29,12 +29,15 @@ This is an E-Commerce database of different products. This particular git uses S
 - "updated the tags-routes.js and product-routes.js. Need to do preliminary testing on these two to make sure they're functioning correctly. Also includes updated Sequelize models for several files (forgot to save earlier)" 
 - "fixed a small bit of code which was preventing run npm start, started updating ReadMe. Added notes to code." 
 - "updated the index.js file. Did not initially have model index.js file. Did not have the route dependencies established which was causing an error when running Insomnia"
+- "fixed a small error where the tags-route was attempting to update category"
+- "fixed error where update tag was not working" 
 
 
 # Contributing
 
 - Worked with tutor Katie Redford. She helped me get started with the project. 
-- Mostly used this past week's (module 13) in-class mini-project as an example of how to run the data. 
+- Mostly used this past week's (module 13) in-class mini-project as an example of how to run the data and set up the routes
+- for help with sequilize validation: https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
 
 
 # Instructions
@@ -50,16 +53,6 @@ To start the E-Commerce Back-End, it's first suggested that one log in and estab
 - Enter "npm run seeds" - to seed the data in seeds folder
 - Enter "npm run start" - program will work and can be tested via Insomnia
 
-
-
 # Video 
 
 
-
-# Updates
-
-- "initial commit"
-- "set up server connection to sequelize and started definding the database models"
-- "set up route structure for categories, set up insomnia for later demonstration"
-- "updated the category-routes to include the delete and update route functions"
-- "updated the tags-routes.js and product-routes.js. Need to do preliminary testing on these two to make sure they're functioning correctly. Also includes updated Sequelize models for several files (forgot to save earlier)" 
