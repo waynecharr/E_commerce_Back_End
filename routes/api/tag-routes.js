@@ -53,7 +53,6 @@ router.put('/:id', async (req, res) => {
   try {
     const updatedTagName = req.body.tag_name;
 
-    // Use the Tag model's update method to update the tag's name by its id
     const [rowsUpdated] = await Tag.update(
       { tag_name: updatedTagName },
       {
@@ -61,7 +60,7 @@ router.put('/:id', async (req, res) => {
       }
     );
 
-    // Check if no tag with the given id was updated
+    // Check if no tag with the given id was updated, different way of writing it
     if (rowsUpdated === 0) {
       return res.status(404).json({ message: 'Tag not found' });
     }

@@ -25,7 +25,6 @@ router.get('/:id', async (req, res) => {
   try {
     const productId = req.params.id;
 
-    // Use the Product model's findOne method to find a product by its id
     const product = await Product.findOne({
       where: { id: productId },
       include: [

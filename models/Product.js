@@ -6,7 +6,7 @@ const sequelize = require('../config/connection');
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
 
-//Added defininitions to define Product, including the product name, price, stock amount (
+//Added defininitions to define Product, including the product name, price, stock amount 
 //defaulted to 10, and a reference to the category ID
 
 Product.init(
