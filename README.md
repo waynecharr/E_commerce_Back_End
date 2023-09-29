@@ -31,6 +31,7 @@ This is an E-Commerce database of different products. This particular git uses S
 - "updated the index.js file. Did not initially have model index.js file. Did not have the route dependencies established which was causing an error when running Insomnia"
 - "fixed a small error where the tags-route was attempting to update category"
 - "fixed error where update tag was not working" 
+- "added demonstration video to ReadMe" 
 
 
 # Contributing
@@ -55,4 +56,4 @@ To start the E-Commerce Back-End, it's first suggested that one log in and estab
 
 # Video 
 
-
+https://drive.google.com/file/d/1F8zApU_NXq3C1LkiSEfn4_hcWSTLBlpa/view
